@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="Survey_Form.css">
+    <meta charset="utf-8">
+  <header class="header">
+    <title>Pizza Hut:Survey Form</title>
+    <h1 id="title">Pizza Hut Survey Form</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve our service</em></p>
+  </header>
+  </head>
+
+  <body>
+
+<!--name, email, age-->
+
+    <form id="survey-form" class="" action="index.html" method="post">
+
+      <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+       <input type="name" id="name" name="name" placeholder="Enter your name" class="the-three" required>
+
+      <label for="email" id="email-label">Email</label>
+       <input type="email" id="email" name="email" placeholder="Enter your Email" class="the-three" required>
+
+      <label for="age" id="number-label">Age <span class="clue">(optional)</span></label>
+       <input type="number" id="number" name="age" min="10" max="99" placeholder="Age" class="the-three">
+     </div>
+
+     <!--dropdown, occupation-->
+
+       <div class="form-group">
+         <p>Which option best describes your current role?</p>
+         <select id="dropdown" class="drop" name="role" required>
+           <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="Employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="other">Other</option>
+            <option value="prefer not to say">Prefer not to say</option>
+         </select>
+        </div>
+
+        <!--radio buttons, visits-->
+
+        <div class="form-group">
+          <label>
+            <p>How often do you visit Pizza Hut?</p>
+            <input name="customer-visit" value="weekly" type="radio" class="list"/>Weekly
+          </label>
+<br>
+         <label>
+          <input name="customer-visit" value="monthly" type="radio" class="list"/>Monthly
+         </label>
+<br>
+          <label>
+           <input name="customer-visit" value="occasionally" type="radio" class="list"/>Occasioanlly
+          </label>
+        </div>
+
+
+<!--dropdown pizzas-->
+
+      <div class="form-group">
+        <p>Which pizza do you usually purchase? </p>
+        <select class="drop" name="pizzas" required>
+        <option disabled selected value>Select following options</option>
+         <option value="pepperoni">Pepperoni</option>
+         <option value="chicken">Chicken</option>
+         <option value="margherita">Margherita</option>
+         <option value="kebab">Kebab</option>
+         <option value="hawaii/tropical">Hawaii/Tropical</option>
+         <option value="shrimp">Shrimp</option>
+         <option value="vegetarian/vegan">Vegetarian/Vegan</option>
+         <option value="glutenfree alternative">Glutenfree alternative</option>
+       </select>
+      </div>
+
+      <!--dropdown rating-->
+
+      <div class="form-group">
+        <p>How would you rate the Pizza Hut customer service?</p>
+        <select class="drop" name="rating" required>
+        <option disabled selected value>Select following options</option>
+         <option value="excellent">Excellent</option>
+         <option value="can't complain!">Can't complain!</option>
+         <option value="good enough">Good enough</option>
+         <option value="could be better">Could be better</option>
+         <option value="dissapointing">Dissapointing<Dissapointing/option>
+        </select>
+       </div>
+
+      <!--checkboxes, media-->
+
+    <div class="form-group">
+     <label>
+       <p>Through which media are you getting information about Pizza hut? <br> <span class="clue"</span>
+         (Check all that apply)</p>
+       <input value="tv" type="checkbox" name="user-info" class="list"/>Tv
+     </label>
+<br>
+     <label>
+     <input value="Newspaper" type="checkbox" name="user-info" class="list"/>Newspaper
+     </label>
+<br>
+     <label>
+      <input value="Pamphlets" type="checkbox"name="user-info" class="list"/>Pamphlets
+     </label>
+<br>
+     <label>
+      <input value="Billboards" type="checkbox" name="user-info" class="list"/>Billboards
+     </label>
+<br>
+     <label>
+      <input value="Other" type="checkbox" name="user-info" class="list"/>Other
+     </label>
+    </div>
+
+    <!--radio boxes, recommendation-->
+
+   <div class="form-group">
+     <label>
+       <p>Would you recommend Pizza Hut to a friend?</p>
+       <input name="user-recommend" value="definitely" type="radio" class="list"/>Definitely
+     </label>
+<br>
+     <label>
+       <input name="user-recommend" value="maybe" type="radio" class="list"/>Maybe
+     </label>
+<br>
+     <label>
+     <input name="user-recommend" value="not sure" type="radio" class="list"/>Not sure
+   </label>
+  </div>
+
+    <!--textarea-->
+
+   <div class="form-group">
+     <p>Any comments or suggestions?</p>
+     <textarea id="comments" class="comment-input" name="comments" placeholder="Enter your comments here..."></textarea>
+   </div>
+
+   <div class="form-group">
+    <button type="submit" id="submit" class="button button1"</button>Submit
+   </div>
+
+    </form>
+  </body>
+</html>
